@@ -1,7 +1,8 @@
 import React from 'react';
-import {createGlobalStyle} from 'styled-components';
+import {createGlobalStyle, ThemeProvider} from 'styled-components';
 
 import Header from './header';
+import theme from '../utils/theme'
 
 const GlobalStyle = createGlobalStyle`
 * {
@@ -18,9 +19,9 @@ body {
 `
 
 export default ({ children }) => (
-  <>
+  <ThemeProvider theme={theme}>
     <GlobalStyle/>
     <Header />
     {children}
-  </>
+  </ThemeProvider>
 );
