@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import styled from 'styled-components';
 
-import Header from "./header"
+import Header from './header';
 
-export default ({children}) => (
+export default ({ children }) => (
   <>
-    <Header/>
+    <Header />
     {children}
   </>
-)
+);
