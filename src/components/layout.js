@@ -1,8 +1,8 @@
 import React from 'react';
-import {createGlobalStyle, ThemeProvider} from 'styled-components';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
 
 import Header from './header';
-import theme from '../utils/theme'
+import theme from '../utils/theme';
 
 const GlobalStyle = createGlobalStyle`
 * {
@@ -16,11 +16,11 @@ const GlobalStyle = createGlobalStyle`
 body {
     margin: 0;
   }
-`
+`;
 
 export default ({ children }) => (
   <ThemeProvider theme={theme}>
-    <GlobalStyle/>
+    <GlobalStyle />
     <Header />
     {children}
   </ThemeProvider>
