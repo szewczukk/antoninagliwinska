@@ -2,7 +2,7 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import Hamburger from "../images/hamburger.svg"
+import Hamburger from '../images/hamburger.svg';
 
 const Header = styled.header`
   padding: 24px;
@@ -33,8 +33,8 @@ const H1 = styled.h1`
 
 export default () => (
   <Header>
-    <Hamburger/>
+    <Hamburger />
     <H1>Antonina Gliwinska</H1>
-    <div/>
+    <div />
   </Header>
 );
