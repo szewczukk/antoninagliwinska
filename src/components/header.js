@@ -14,6 +14,13 @@ const Header = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  width: 100vw;
 `;
 
 const H1 = styled.h1`
@@ -23,7 +30,6 @@ const H1 = styled.h1`
     },
   }) => white};
   text-align: center;
-  font-family: ${({ theme: { font } }) => font};
   font-weight: ${({
     theme: {
       weights: { bold },

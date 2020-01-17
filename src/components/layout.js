@@ -15,6 +15,7 @@ const GlobalStyle = createGlobalStyle`
 
 body {
     margin: 0;
+    font-family: ${({ theme: { font } }) => font};
   }
 `;
 
