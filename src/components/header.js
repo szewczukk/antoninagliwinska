@@ -15,7 +15,7 @@ const Header = styled.header`
 	align-items: center;
 	justify-content: space-between;
 
-	position: absolute;
+	position: sticky;
 	top: 0;
 	left: 0;
 	z-index: 2;
