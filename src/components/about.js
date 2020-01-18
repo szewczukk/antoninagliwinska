@@ -14,19 +14,20 @@ const Wrapper = styled.div`
 const Image = styled(GatsbyImage)`
 	width: 260px;
 	height: 260px;
-
-	margin: 0;
 `;
 
 const TopContainer = styled.div`
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-column-gap: 3rem;
+
+	margin-bottom: 1rem;
 `;
 
 const TextContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-left: 2rem;
 `;
 
 const Heading = styled.h3`
@@ -37,7 +38,16 @@ const P = styled.p`
 	width: 530px;
 `;
 
-export default ({ avatar }) => (
+const BottomContainer = styled.div`
+	display: grid;
+
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-column-gap: 2rem;
+	grid-row-gap: 1rem;
+`;
+
+export default ({ avatar, first, second, third, fourth, five, six }) => (
 	<Wrapper>
 		<TopContainer>
 			<Image fluid={avatar} />
@@ -50,6 +60,13 @@ export default ({ avatar }) => (
 				</P>
 			</TextContainer>
 		</TopContainer>
-		<div />
+		<BottomContainer>
+			<Image fluid={first} />
+			<Image fluid={second} />
+			<Image fluid={third} />
+			<Image fluid={fourth} />
+			<Image fluid={five} />
+			<Image fluid={six} />
+		</BottomContainer>
 	</Wrapper>
 );
