@@ -3,7 +3,7 @@
     "browser": true,
     "es6": true
   },
-  "extends": ["plugin:react/recommended", "airbnb"],
+  "extends": ["plugin:react/recommended", "airbnb", "prettier"],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
@@ -18,8 +18,13 @@
   "plugins": ["react"],
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-    "quotes": ["error", "backtick"],
+    "react/prop-types": "off",
+    "react/jsx-indent": "off",
+    "react/jsx-indent-props": "off",
+    "quotes": ["error", "single", { "allowTemplateLiterals": true }],
     "linebreak-style": ["error", "windows"],
-    "react/prop-types": "off"
+    "no-tabs": "off",
+    "no-mixed-spaces-and-tabs": "error",
+    "indent": ["error", "tab"]
   }
 }
