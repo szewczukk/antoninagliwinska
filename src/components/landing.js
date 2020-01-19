@@ -86,7 +86,7 @@ const Arrow = styled(ArrowSVG)`
 export default ({ fluid }) => (
 	<Background fluid={fluid}>
 		<FlexWrapper>
-			<H2>Antonina Gliwińska</H2>
+			<H2 id="#about">Antonina Gliwińska</H2>
 			<P>Lorem ipsum dolor sit amet</P>
 			<Button href="#about">
 				Więcej o mnie

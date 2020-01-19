@@ -1,5 +1,5 @@
-import React from 'react';
-import { StaticQuery, graphql, use } from 'gatsby';
+import React, { Component } from 'react';
+import { StaticQuery, graphql } from 'gatsby';
 import GatsbyImage from 'gatsby-image';
 
 import styled from 'styled-components';
@@ -30,7 +30,33 @@ const P = styled.p`
 const CardsWrapper = styled.div`
 	display: flex;
 
-	overflow: hidden;
+	overflow-x: scroll;
+
+	::-webkit-scrollbar {
+		height: 10px;
+	}
+
+	::-webkit-scrollbar-track {
+		box-shadow: inset 0 0 5px grey;
+		border-radius: 25px;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: ${({
+			theme: {
+				colors: { secondary },
+			},
+		}) => secondary};
+		border-radius: 25px;
+
+		:hover {
+			background: ${({
+				theme: {
+					colors: { primary },
+				},
+			}) => primary};
+		}
+	}
 `;
 
 const Card = styled.div`
