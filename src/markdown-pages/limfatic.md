@@ -1,4 +1,4 @@
 ---
 title: Limfatyczny
-icon: limfatic.jpg
+icon: ../images/limfatic.jpg
 ---

@@ -1,4 +1,4 @@
 ---
 title: Taping
-icon: tapping.jpg
+icon: ../images/tapping.jpg
 ---

@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 
 import Layout from '../components/layout';
 import About from '../components/about';
+import Offer from '../components/offer';
 
 import SEO from '../components/seo';
 import Landing from '../components/landing';
@@ -23,6 +24,7 @@ export default ({
 			five={five.childImageSharp.fluid}
 			six={six.childImageSharp.fluid}
 		/>
+		<Offer />
 	</Layout>
 );
 

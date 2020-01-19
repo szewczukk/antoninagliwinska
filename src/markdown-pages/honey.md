@@ -1,4 +1,4 @@
 ---
 title: Miodem
-icon: honey.jpg
+icon: ../images/honey.jpg
 ---

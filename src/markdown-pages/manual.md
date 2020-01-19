@@ -1,4 +1,4 @@
 ---
 title: Manual
-icon: manual.jpg
+icon: ../images/manual.jpg
 ---

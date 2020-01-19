@@ -3,6 +3,7 @@ export default {
 		primary: '#2699FB',
 		secondary: '#2699FB',
 		white: '#ffffff',
+		accent: '#EEF7FF',
 	},
 	font: 'Verdana, sans-serif',
 	weights: {

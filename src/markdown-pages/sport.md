@@ -1,4 +1,4 @@
 ---
 title: Sportowy
-icon: sport.jpg
+icon: ../images/sport.jpg
 ---

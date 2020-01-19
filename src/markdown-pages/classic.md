@@ -1,4 +1,4 @@
 ---
 title: Masaż klasyczny
-icon: classic.jpg
+icon: ../images/classic.jpg
 ---

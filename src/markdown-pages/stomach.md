@@ -1,4 +1,4 @@
 ---
 title: Brzucha
-icon: stomach.jpg
+icon: ../images/stomach.jpg
 ---

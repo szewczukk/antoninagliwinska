@@ -1,4 +1,4 @@
 ---
 title: Twarzy
-icon: face.jpg
+icon: ../images/face.jpg
 ---

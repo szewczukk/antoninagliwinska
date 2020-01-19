@@ -1,4 +1,4 @@
 ---
 title: Bańką wschodnią
-icon: can.jpg
+icon: ../images/can.jpg
 ---
