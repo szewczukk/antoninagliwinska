@@ -16,7 +16,11 @@ const Image = styled(GatsbyImage)`
 	height: auto;
 `;
 
-const TopContainer = styled.div`
+const MarginImage = styled(Image)`
+	margin: 1rem;
+`;
+
+const InfoContainer = styled.div`
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	grid-column-gap: 3rem;
@@ -44,25 +48,17 @@ const P = styled.p`
 	max-width: 530px;
 `;
 
-const BottomContainer = styled.div`
-	display: grid;
+const ImagesContainer = styled.div`
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	grid-column-gap: 2rem;
-	grid-row-gap: 1rem;
-
-	@media (max-width: 900px) {
-		grid-template-columns: 260px 260px;
-	}
-	@media (max-width: 590px) {
-		grid-template-columns: 260px;
-	}
+	max-width: 876px;
 `;
 
 export default ({ avatar, first, second, third, fourth, five, six }) => (
 	<Wrapper>
-		<TopContainer>
+		<InfoContainer>
 			<Image fluid={avatar} />
 			<TextContainer>
 				<Heading>Jestem Antonina!</Heading>
@@ -72,14 +68,14 @@ export default ({ avatar, first, second, third, fourth, five, six }) => (
 					sed diam voluptua. At vero eos
 				</P>
 			</TextContainer>
-		</TopContainer>
-		<BottomContainer>
-			<Image fluid={first} />
-			<Image fluid={second} />
-			<Image fluid={third} />
-			<Image fluid={fourth} />
-			<Image fluid={five} />
-			<Image fluid={six} />
-		</BottomContainer>
+		</InfoContainer>
+		<ImagesContainer>
+			<MarginImage fluid={first} />
+			<MarginImage fluid={second} />
+			<MarginImage fluid={third} />
+			<MarginImage fluid={fourth} />
+			<MarginImage fluid={five} />
+			<MarginImage fluid={six} />
+		</ImagesContainer>
 	</Wrapper>
 );
