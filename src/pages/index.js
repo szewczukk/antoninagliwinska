@@ -14,6 +14,7 @@ export default ({
 		<SEO title="Home" />
 		<Landing fluid={background.childImageSharp.fluid} />
 		<About
+			id="about"
 			avatar={avatar.childImageSharp.fluid}
 			first={background.childImageSharp.fluid}
 			second={second.childImageSharp.fluid}

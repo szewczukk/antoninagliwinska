@@ -13,7 +13,7 @@ const Wrapper = styled.div`
 
 const Image = styled(GatsbyImage)`
 	width: 260px;
-	height: 260px;
+	height: auto;
 `;
 
 const TopContainer = styled.div`
@@ -22,6 +22,12 @@ const TopContainer = styled.div`
 	grid-column-gap: 3rem;
 
 	margin-bottom: 1rem;
+
+	@media (max-width: 900px) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 `;
 
 const TextContainer = styled.div`
@@ -35,7 +41,7 @@ const Heading = styled.h3`
 `;
 
 const P = styled.p`
-	width: 530px;
+	max-width: 530px;
 `;
 
 const BottomContainer = styled.div`
@@ -45,6 +51,13 @@ const BottomContainer = styled.div`
 	grid-template-rows: 1fr 1fr;
 	grid-column-gap: 2rem;
 	grid-row-gap: 1rem;
+
+	@media (max-width: 900px) {
+		grid-template-columns: 260px 260px;
+	}
+	@media (max-width: 590px) {
+		grid-template-columns: 260px;
+	}
 `;
 
 export default ({ avatar, first, second, third, fourth, five, six }) => (

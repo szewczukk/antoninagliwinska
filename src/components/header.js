@@ -20,7 +20,7 @@ const Header = styled.header`
 	left: 0;
 	z-index: 2;
 
-	width: 100vw;
+	max-width: 100vw;
 `;
 
 const H1 = styled.h1`

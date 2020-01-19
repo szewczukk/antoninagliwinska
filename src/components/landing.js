@@ -46,7 +46,7 @@ const P = styled.p`
 	}
 `;
 
-const Button = styled.button`
+const Button = styled.a`
 	background: ${({
 		theme: {
 			colors: { primary },
@@ -64,6 +64,8 @@ const Button = styled.button`
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	text-decoration: none;
 
 	@media (max-width: 900px) {
 		width: 200px;
@@ -86,7 +88,7 @@ export default ({ fluid }) => (
 		<FlexWrapper>
 			<H2>Antonina Gliwińska</H2>
 			<P>Lorem ipsum dolor sit amet</P>
-			<Button>
+			<Button href="#about">
 				Więcej o mnie
 				<Arrow />
 			</Button>
