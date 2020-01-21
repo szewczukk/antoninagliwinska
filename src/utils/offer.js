@@ -1,8 +1,33 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import styled from 'styled-components';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+
+const Wrapper = styled.div`
+	max-width: 1366px;
+	margin: 0 auto 2rem auto;
+
+	h2,
+	h3 {
+		margin: 1rem 0;
+		font-weight: bold;
+	}
+
+	ul {
+		margin-left: 2rem;
+	}
+
+	.gatsby-resp-image-link {
+		height: 300px;
+		width: 300px;
+	}
+
+	.top {
+		display: flex;
+	}
+`;
 
 export default ({ data }) => {
 	const { html } = data.markdownRemark;
@@ -10,8 +35,7 @@ export default ({ data }) => {
 	return (
 		<Layout>
 			<SEO title={title} />
-			<h2>{title}</h2>
-			<div dangerouslySetInnerHTML={{ __html: html }} />
+			<Wrapper dangerouslySetInnerHTML={{ __html: html }} />
 		</Layout>
 	);
 };

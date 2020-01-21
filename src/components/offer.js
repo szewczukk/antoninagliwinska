@@ -115,8 +115,8 @@ export default () => (
 							const { title, icon } = offer.node.frontmatter;
 							const { slug } = offer.node.fields;
 							return (
-								<Card>
-									<StyledLink to={slug} id={id}>
+								<Card key={id}>
+									<StyledLink to={slug}>
 										<CardImage fluid={icon.childImageSharp.fluid} />
 										<CardText>{title}</CardText>
 									</StyledLink>

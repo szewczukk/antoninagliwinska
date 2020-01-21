@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 import Hamburger from '../images/hamburger.svg';
@@ -29,18 +29,21 @@ const H1 = styled.h1`
 			colors: { white },
 		},
 	}) => white};
-	text-align: center;
 	font-weight: ${({
 		theme: {
 			weights: { bold },
 		},
 	}) => bold};
+	text-align: center;
+	text-decoration: none;
 `;
 
 export default () => (
 	<Header>
 		<Hamburger />
-		<H1>Antonina Gliwinska</H1>
+		<Link to="/">
+			<H1>Antonina Gliwinska</H1>
+		</Link>
 		<div />
 	</Header>
 );
