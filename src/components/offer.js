@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { StaticQuery, graphql } from 'gatsby';
+import React from 'react';
+import { StaticQuery, graphql, Link } from 'gatsby';
 import GatsbyImage from 'gatsby-image';
 
 import styled from 'styled-components';
@@ -84,6 +84,9 @@ export default () => (
 					allMarkdownRemark {
 						edges {
 							node {
+								fields {
+									slug
+								}
 								frontmatter {
 									title
 									icon {
@@ -105,11 +108,14 @@ export default () => (
 					<CardsWrapper>
 						{edges.map((offer, id) => {
 							const { title, icon } = offer.node.frontmatter;
+							const { slug } = offer.node.fields;
 							return (
-								<Card id={id}>
-									<CardImage fluid={icon.childImageSharp.fluid} />
-									<CardText>{title}</CardText>
-								</Card>
+								<Link to={slug} id={id}>
+									<Card>
+										<CardImage fluid={icon.childImageSharp.fluid} />
+										<CardText>{title}</CardText>
+									</Card>
+								</Link>
 							);
 						})}
 					</CardsWrapper>
