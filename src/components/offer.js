@@ -74,6 +74,11 @@ const CardText = styled.p`
 	text-align: center;
 `;
 
+const StyledLink = styled(Link)`
+	text-decoration: none;
+	color: inherit;
+`;
+
 export default () => (
 	<MainWrapper>
 		<H3>Moja oferta</H3>
@@ -110,12 +115,12 @@ export default () => (
 							const { title, icon } = offer.node.frontmatter;
 							const { slug } = offer.node.fields;
 							return (
-								<Link to={slug} id={id}>
-									<Card>
+								<Card>
+									<StyledLink to={slug} id={id}>
 										<CardImage fluid={icon.childImageSharp.fluid} />
 										<CardText>{title}</CardText>
-									</Card>
-								</Link>
+									</StyledLink>
+								</Card>
 							);
 						})}
 					</CardsWrapper>

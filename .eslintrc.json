@@ -18,6 +18,7 @@
   "plugins": ["react"],
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/no-danger": "off",
     "react/prop-types": "off",
     "react/jsx-indent": "off",
     "react/jsx-indent-props": "off",
