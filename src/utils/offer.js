@@ -26,6 +26,10 @@ const Wrapper = styled.div`
 	ul {
 		margin-left: 2rem;
 	}
+
+	@media (max-width: 900px) {
+		margin: 0.5rem;
+	}
 `;
 
 export default ({ data }) => {

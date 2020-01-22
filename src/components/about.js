@@ -46,6 +46,10 @@ const Heading = styled.h3`
 
 const P = styled.p`
 	max-width: 530px;
+
+	@media (max-width: 900px) {
+		margin: 0 0.5rem;
+	}
 `;
 
 const ImagesContainer = styled.div`
