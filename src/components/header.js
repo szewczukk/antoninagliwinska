@@ -1,16 +1,17 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { graphql, Link, StaticQuery } from 'gatsby';
+import Image from 'gatsby-image';
 import styled from 'styled-components';
 
 import Hamburger from '../images/hamburger.svg';
 
 const Header = styled.header`
-	padding: 24px;
+	padding: 1rem;
 	background: ${({
 		theme: {
-			colors: { primary },
+			colors: { white },
 		},
-	}) => primary};
+	}) => white};
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -23,30 +24,36 @@ const Header = styled.header`
 	max-width: 100vw;
 `;
 
-const H1 = styled.h1`
-	color: ${({
-		theme: {
-			colors: { white },
-		},
-	}) => white};
-	font-weight: ${({
-		theme: {
-			weights: { bold },
-		},
-	}) => bold};
-	text-align: center;
-`;
-
 const StyledLink = styled(Link)`
 	color: inherit;
 	text-decoration: none;
+`;
+
+const StyledImage = styled(Image)`
+	width: 40px;
 `;
 
 export default () => (
 	<Header>
 		<Hamburger />
 		<StyledLink to="/">
-			<H1>Antonina Gliwinska</H1>
+			<StaticQuery
+				query={graphql`
+					query {
+						file(relativePath: { eq: "logo.png" }) {
+							childImageSharp {
+								fixed(quality: 100, width: 40) {
+									...GatsbyImageSharpFixed
+								}
+							}
+						}
+					}
+				`}
+				render={data => {
+					const { fixed } = data.file.childImageSharp;
+					return <StyledImage fixed={fixed} />;
+				}}
+			/>
 		</StyledLink>
 		<div />
 	</Header>

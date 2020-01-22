@@ -49,9 +49,9 @@ const P = styled.p`
 const Button = styled.a`
 	background: ${({
 		theme: {
-			colors: { primary },
+			colors: { white },
 		},
-	}) => primary};
+	}) => white};
 
 	border: 0;
 	border-radius: 2px;
@@ -59,7 +59,11 @@ const Button = styled.a`
 	width: 300px;
 	height: 72px;
 
-	color: white;
+	color: ${({
+		theme: {
+			colors: { primary },
+		},
+	}) => primary};
 
 	display: flex;
 	align-items: center;
@@ -86,7 +90,7 @@ const Arrow = styled(ArrowSVG)`
 export default ({ fluid }) => (
 	<Background fluid={fluid}>
 		<FlexWrapper>
-			<H2 id="#about">Antonina Gliwińska</H2>
+			<H2 id="#about">Antonina Gliwinska</H2>
 			<P>Lorem ipsum dolor sit amet</P>
 			<Button href="#about">
 				Więcej o mnie
