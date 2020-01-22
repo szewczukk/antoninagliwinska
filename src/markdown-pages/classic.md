@@ -8,7 +8,7 @@ icon: ../images/classic.jpg
 ## Masaż klasyczny
 Masaż klasyczny pobudza krążenie, rozluźnia, łagodzi bóle. Stosuje się także przy nerwicach, stanach lękowych i depresji. Pozytywnie oddziałuje na psychikę i stan fizyczny osób przemęczonych.
 
-### Wskazania:
+### Wskazania
 * Bóle pleców
 * Bóle karku
 * Bóle mięśni
@@ -18,7 +18,7 @@ Masaż klasyczny pobudza krążenie, rozluźnia, łagodzi bóle. Stosuje się ta
 * Przykurcze
 * Choroby reumatyczne
 
-### Przeciwwskazania:
+### Przeciwwskazania
 * Ciąża
 * Gorączka
 * Żylaki

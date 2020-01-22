@@ -7,7 +7,7 @@ import SEO from '../components/seo';
 
 const Wrapper = styled.div`
 	max-width: 1366px;
-	margin: 0 auto 2rem auto;
+	margin: 2rem auto 2rem auto;
 
 	h2,
 	h3 {
@@ -15,17 +15,16 @@ const Wrapper = styled.div`
 		font-weight: bold;
 	}
 
+	h2 {
+		font-size: 1.75rem;
+	}
+
+	h3 {
+		font-size: 1.25rem;
+	}
+
 	ul {
 		margin-left: 2rem;
-	}
-
-	.gatsby-resp-image-link {
-		height: 300px;
-		width: 300px;
-	}
-
-	.top {
-		display: flex;
 	}
 `;
 
