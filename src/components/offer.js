@@ -6,6 +6,8 @@ import styled from 'styled-components';
 
 const MainWrapper = styled.div`
 	margin-top: 3rem;
+	padding-bottom: 2rem;
+	padding-top: 0.5rem;
 
 	width: 100%;
 	background: ${({
