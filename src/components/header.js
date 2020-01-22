@@ -35,15 +35,19 @@ const H1 = styled.h1`
 		},
 	}) => bold};
 	text-align: center;
+`;
+
+const StyledLink = styled(Link)`
+	color: inherit;
 	text-decoration: none;
 `;
 
 export default () => (
 	<Header>
 		<Hamburger />
-		<Link to="/">
+		<StyledLink to="/">
 			<H1>Antonina Gliwinska</H1>
-		</Link>
+		</StyledLink>
 		<div />
 	</Header>
 );
