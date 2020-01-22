@@ -23,6 +23,7 @@
     "react/jsx-indent": "off",
     "react/jsx-indent-props": "off",
     "react/no-array-index-key": "off",
+    "react/jsx-one-expression-per-line": "off",
     "quotes": ["error", "single", { "allowTemplateLiterals": true }],
     "linebreak-style": ["error", "windows"],
     "no-tabs": "off",

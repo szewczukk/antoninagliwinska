@@ -4,6 +4,8 @@ import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import Header from './header';
 import theme from '../utils/theme';
 
+import Footer from './footer';
+
 const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
@@ -24,5 +26,6 @@ export default ({ children }) => (
 		<GlobalStyle />
 		<Header />
 		{children}
+		<Footer />
 	</ThemeProvider>
 );
