@@ -25,7 +25,7 @@ export default ({
 			six={six.childImageSharp.fluid}
 		/>
 		<Offer />
-		<Contact />
+		<Contact avatar={avatar.childImageSharp.fluid} />
 	</Layout>
 );
 

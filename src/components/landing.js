@@ -6,7 +6,7 @@ import ArrowSVG from '../images/arrow.svg';
 
 const Background = styled(BackgroundImage)`
 	width: 100%;
-	min-height: 100vh;
+	height: 100vh;
 	background: rgba(0, 0, 0, 0.3) center 30%;
 	background-blend-mode: darken;
 
@@ -31,7 +31,7 @@ const H2 = styled.h2`
 	text-align: center;
 
 	@media (max-width: 900px) {
-		font-size: 2rem;
+		font-size: 3rem;
 	}
 `;
 
@@ -42,7 +42,7 @@ const P = styled.p`
 	margin-bottom: 8rem;
 
 	@media (max-width: 900px) {
-		font-size: 1rem;
+		font-size: 1.25rem;
 	}
 `;
 
