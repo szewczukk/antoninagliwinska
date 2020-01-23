@@ -14,7 +14,7 @@ export default ({
 }) => (
 	<Layout>
 		<SEO title="Home" />
-		<Landing fluid={background.childImageSharp.fluid} />
+		<Landing fluid={background.childImageSharp.fluid} id="home" />
 		<About
 			avatar={avatar.childImageSharp.fluid}
 			first={background.childImageSharp.fluid}
@@ -23,9 +23,10 @@ export default ({
 			fourth={fourth.childImageSharp.fluid}
 			five={five.childImageSharp.fluid}
 			six={six.childImageSharp.fluid}
+			id="aout"
 		/>
-		<Offer />
-		<Contact avatar={avatar.childImageSharp.fluid} />
+		<Offer id="contact" />
+		<Contact avatar={avatar.childImageSharp.fluid} id="contact" />
 	</Layout>
 );
 
