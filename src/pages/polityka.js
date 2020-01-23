@@ -90,10 +90,6 @@ export default () => (
 							www.support.google.com/chrome/bin/answer.py?hl=pl&answer=95647
 						</Element>
 						<Element>
-							Google Chrome:
-							www.support.google.com/chrome/bin/answer.py?hl=pl&answer=95647
-						</Element>
-						<Element>
 							Safari:
 							www.safari.helpmax.net/pl/oszczedzanie-czasu/blokowanie-zawartosci/
 						</Element>
