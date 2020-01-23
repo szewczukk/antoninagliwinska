@@ -1,5 +1,7 @@
 import React from 'react';
-import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import { Link } from 'gatsby';
+import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
+import CookieConsent from 'react-cookie-consent';
 
 import Header from './header';
 import theme from '../utils/theme';
@@ -21,11 +23,27 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
+const StyledLink = styled(Link)`
+	color: inherit;
+	display: inline-block;
+`;
+
 export default ({ children }) => (
 	<ThemeProvider theme={theme}>
 		<GlobalStyle />
 		<Header />
 		{children}
 		<Footer />
+		<CookieConsent
+			debug="true"
+			buttonText="Zgadzam się"
+			style={{
+				background: theme.colors.secondary,
+			}}
+			buttonStyle={{ background: theme.colors.white, borderRadius: '2px' }}
+		>
+			Ta strona używa pliki cookies{' '}
+			<StyledLink to="/polityka">Zobacz politykę plików cookies</StyledLink>
+		</CookieConsent>
 	</ThemeProvider>
 );
