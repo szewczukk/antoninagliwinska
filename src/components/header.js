@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql, Link, StaticQuery } from 'gatsby';
 import Image from 'gatsby-image';
 import styled from 'styled-components';
+import { connect } from 'react-redux';
 
 import Hamburger from '../images/hamburger.svg';
 
@@ -33,9 +34,9 @@ const StyledImage = styled(Image)`
 	width: 40px;
 `;
 
-export default () => (
+const HeaderComponent = ({ toggleNavigation }) => (
 	<Header>
-		<Hamburger />
+		<Hamburger onClick={toggleNavigation} />
 		<StyledLink to="/">
 			<StaticQuery
 				query={graphql`
@@ -58,3 +59,8 @@ export default () => (
 		<div />
 	</Header>
 );
+
+const mapDispatchToProps = dispatch => {
+	return { toggleNavigation: () => dispatch({ type: 'TOGGLE_NAVIGATION' }) };
+};
+export default connect(null, mapDispatchToProps)(HeaderComponent);

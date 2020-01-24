@@ -7,6 +7,7 @@ import Header from './header';
 import theme from '../utils/theme';
 
 import Footer from './footer';
+import Navigation from './navigation';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -32,6 +33,7 @@ export default ({ children }) => (
 	<ThemeProvider theme={theme}>
 		<GlobalStyle />
 		<Header />
+		<Navigation />
 		{children}
 		<Footer />
 		<CookieConsent
