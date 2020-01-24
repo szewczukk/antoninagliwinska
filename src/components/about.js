@@ -61,7 +61,7 @@ const ImagesContainer = styled.div`
 `;
 
 export default ({ avatar, first, second, third, fourth, five, six }) => (
-	<Wrapper>
+	<Wrapper id="about">
 		<InfoContainer>
 			<Image fluid={avatar} />
 			<TextContainer>

@@ -82,7 +82,7 @@ const StyledLink = styled(Link)`
 `;
 
 export default () => (
-	<MainWrapper>
+	<MainWrapper id="offer">
 		<H3>Moja oferta</H3>
 		<P>Cena: 100zł/h</P>
 		<StaticQuery

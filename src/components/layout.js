@@ -9,6 +9,11 @@ import theme from '../utils/theme';
 import Footer from './footer';
 import Navigation from './navigation';
 
+if (typeof window !== 'undefined') {
+	// eslint-disable-next-line global-require
+	require('smooth-scroll')('a[href*="#"]');
+}
+
 const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
