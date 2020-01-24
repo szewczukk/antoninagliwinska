@@ -7,7 +7,6 @@ import Header from './header';
 import theme from '../utils/theme';
 
 import Footer from './footer';
-import Navigation from './navigation';
 
 if (typeof window !== 'undefined') {
 	// eslint-disable-next-line global-require
@@ -38,7 +37,6 @@ export default ({ children }) => (
 	<ThemeProvider theme={theme}>
 		<GlobalStyle />
 		<Header />
-		<Navigation />
 		{children}
 		<Footer />
 		<CookieConsent

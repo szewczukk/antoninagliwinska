@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { connect } from 'react-redux';
 
 const Wrapper = styled.div`
-	position: absolute;
+	position: sticky;
 	width: 100%;
 	height: 100vh;
 	top: 0;
@@ -14,7 +14,7 @@ const Wrapper = styled.div`
 
 	display: ${({ navigationToggled }) => (navigationToggled ? 'flex' : 'none')};
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
 	flex-direction: column;
 
 	z-index: 2;
@@ -60,9 +60,6 @@ class Navigation extends Component {
 		const { navigationToggled, toggleNavigation } = this.props;
 		return (
 			<Wrapper navigationToggled={navigationToggled}>
-				<button onClick={toggleNavigation} type="button">
-					Toggle
-				</button>
 				<List>
 					<StyledLink to="/#home" onClick={toggleNavigation}>
 						<Element>Strona główna</Element>
