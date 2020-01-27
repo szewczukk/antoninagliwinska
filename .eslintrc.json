@@ -29,6 +29,6 @@
     "linebreak-style": ["error", "windows"],
     "no-tabs": "off",
     "no-mixed-spaces-and-tabs": "error",
-    "indent": ["error", "tab"]
+    "indent": "off"
   }
 }

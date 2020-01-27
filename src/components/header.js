@@ -2,8 +2,18 @@ import React, { Component } from 'react';
 import { graphql, Link, StaticQuery } from 'gatsby';
 import Image from 'gatsby-image';
 import styled from 'styled-components';
+import { connect } from 'react-redux';
 
-import Hamburger from '../images/hamburger.svg';
+import HamburgerSVG from '../images/hamburger.svg';
+
+import Navigation from './navigation';
+
+const Wrapper = styled.div`
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 1;
+`;
 
 import Navigation from './navigation';
 
@@ -18,11 +28,6 @@ const Header = styled.header`
 	align-items: center;
 	justify-content: space-between;
 
-	position: sticky;
-	top: 0;
-	left: 0;
-	z-index: 2;
-
 	max-width: 100vw;
 `;
 
@@ -35,6 +40,7 @@ const StyledImage = styled(Image)`
 	width: 40px;
 `;
 
+<<<<<<< HEAD
 export default class extends Component {
 	constructor(props) {
 		super(props);
@@ -80,3 +86,42 @@ export default class extends Component {
 		);
 	}
 }
+=======
+const Hamburger = styled(HamburgerSVG)`
+	cursor: pointer;
+`;
+
+const HeaderComponent = ({ toggleNavigation }) => (
+	<Wrapper>
+		<Header>
+			<Hamburger onClick={toggleNavigation} />
+			<StyledLink to="/">
+				<StaticQuery
+					query={graphql`
+						query {
+							file(relativePath: { eq: "logo.png" }) {
+								childImageSharp {
+									fixed(quality: 100, width: 40) {
+										...GatsbyImageSharpFixed
+									}
+								}
+							}
+						}
+					`}
+					render={data => {
+						const { fixed } = data.file.childImageSharp;
+						return <StyledImage fixed={fixed} />;
+					}}
+				/>
+			</StyledLink>
+			<div />
+		</Header>
+		<Navigation />
+	</Wrapper>
+);
+
+const mapDispatchToProps = dispatch => {
+	return { toggleNavigation: () => dispatch({ type: 'TOGGLE_NAVIGATION' }) };
+};
+export default connect(null, mapDispatchToProps)(HeaderComponent);
+>>>>>>> navigation
