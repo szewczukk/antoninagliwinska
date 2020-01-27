@@ -15,6 +15,8 @@ const MainWrapper = styled.div`
 			colors: { accent },
 		},
 	}) => accent};
+
+	position: relative;
 `;
 
 const H3 = styled.h3`
@@ -81,8 +83,15 @@ const StyledLink = styled(Link)`
 	color: inherit;
 `;
 
+const Anchor = styled.div`
+	position: absolute;
+	left: 0;
+	top: -88px;
+`;
+
 export default () => (
-	<MainWrapper id="offer">
+	<MainWrapper>
+		<Anchor id="offer" />
 		<H3>Moja oferta</H3>
 		<P>Cena: 100zł/h</P>
 		<StaticQuery

@@ -9,6 +9,8 @@ const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
+	position: relative;
 `;
 
 const Image = styled(GatsbyImage)`
@@ -60,8 +62,15 @@ const ImagesContainer = styled.div`
 	max-width: 876px;
 `;
 
+const Anchor = styled.div`
+	position: absolute;
+	left: 0;
+	top: -88px;
+`;
+
 export default ({ avatar, first, second, third, fourth, five, six }) => (
-	<Wrapper id="about">
+	<Wrapper>
+		<Anchor id="about" />
 		<InfoContainer>
 			<Image fluid={avatar} />
 			<TextContainer>
