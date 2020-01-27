@@ -1,5 +1,5 @@
 ---
-title: Masaż klasyczny
+title: Klasyczny
 icon: ../images/classic.jpg
 ---
 
