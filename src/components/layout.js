@@ -8,11 +8,6 @@ import theme from '../utils/theme';
 
 import Footer from './footer';
 
-if (typeof window !== 'undefined') {
-	// eslint-disable-next-line global-require
-	require('smooth-scroll')('a[href*="#"]');
-}
-
 const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
@@ -25,6 +20,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     font-family: ${({ theme: { font } }) => font};
+    scroll-behavior: smooth;
   }
 `;
 

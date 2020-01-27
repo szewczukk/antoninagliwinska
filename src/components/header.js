@@ -4,7 +4,7 @@ import Image from 'gatsby-image';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
 
-import Hamburger from '../images/hamburger.svg';
+import HamburgerSVG from '../images/hamburger.svg';
 
 import Navigation from './navigation';
 
@@ -36,6 +36,10 @@ const StyledLink = styled(Link)`
 
 const StyledImage = styled(Image)`
 	width: 40px;
+`;
+
+const Hamburger = styled(HamburgerSVG)`
+	cursor: pointer;
 `;
 
 const HeaderComponent = ({ toggleNavigation }) => (
