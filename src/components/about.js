@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 import GatsbyImage from 'gatsby-image';
 
@@ -72,7 +73,12 @@ export default ({ avatar, first, second, third, fourth, five, six }) => (
 	<Wrapper>
 		<Anchor id="about" />
 		<InfoContainer>
-			<Image fluid={avatar} />
+			<Image
+				fluid={avatar}
+				variants={{ visible: { opacity: 1 }, hidden: { opacity: 1 } }}
+				initial="hidden"
+				animate="visible"
+			/>
 			<TextContainer>
 				<Heading>Jestem Antonina!</Heading>
 				<P>

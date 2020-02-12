@@ -18,6 +18,8 @@ const Wrapper = styled.div`
 	flex-direction: column;
 
 	z-index: 2;
+
+	padding-left: 2rem;
 `;
 
 const List = styled.ul`
