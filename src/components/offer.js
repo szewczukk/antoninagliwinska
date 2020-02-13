@@ -1,6 +1,7 @@
 import React from 'react';
 import { StaticQuery, graphql, Link } from 'gatsby';
 import GatsbyImage from 'gatsby-image';
+import Bounce from 'react-reveal/Bounce';
 
 import styled from 'styled-components';
 
@@ -121,20 +122,22 @@ export default () => (
 			render={data => {
 				const { edges } = data.allMarkdownRemark;
 				return (
-					<CardsWrapper>
-						{edges.map((offer, id) => {
-							const { title, icon } = offer.node.frontmatter;
-							const { slug } = offer.node.fields;
-							return (
-								<Card key={id}>
-									<StyledLink to={slug}>
-										<CardImage fluid={icon.childImageSharp.fluid} />
-										<CardText>{title}</CardText>
-									</StyledLink>
-								</Card>
-							);
-						})}
-					</CardsWrapper>
+					<Bounce bottom>
+						<CardsWrapper>
+							{edges.map((offer, id) => {
+								const { title, icon } = offer.node.frontmatter;
+								const { slug } = offer.node.fields;
+								return (
+									<Card key={id}>
+										<StyledLink to={slug}>
+											<CardImage fluid={icon.childImageSharp.fluid} />
+											<CardText>{title}</CardText>
+										</StyledLink>
+									</Card>
+								);
+							})}
+						</CardsWrapper>
+					</Bounce>
 				);
 			}}
 		/>

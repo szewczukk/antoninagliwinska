@@ -1,6 +1,7 @@
 import React from 'react';
 import BackgroundImage from 'gatsby-background-image';
 import styled from 'styled-components';
+import Pulse from 'react-reveal/Pulse';
 
 import ArrowSVG from '../images/arrow.svg';
 
@@ -90,12 +91,14 @@ const Arrow = styled(ArrowSVG)`
 export default ({ fluid }) => (
 	<Background fluid={fluid}>
 		<FlexWrapper>
-			<H2 id="#about">Antonina Gliwinska</H2>
-			<P>Lorem ipsum dolor sit amet</P>
-			<Button href="#about">
-				Więcej o mnie
-				<Arrow />
-			</Button>
+			<Pulse>
+				<H2 id="#about">Antonina Gliwinska</H2>
+				<P>Lorem ipsum dolor sit amet</P>
+				<Button href="#about">
+					Więcej o mnie
+					<Arrow />
+				</Button>
+			</Pulse>
 		</FlexWrapper>
 	</Background>
 );

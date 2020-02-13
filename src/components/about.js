@@ -1,7 +1,7 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import styled from 'styled-components';
 import GatsbyImage from 'gatsby-image';
+import Slide from 'react-reveal/Slide';
 
 const Wrapper = styled.div`
 	max-width: 1366px;
@@ -73,28 +73,31 @@ export default ({ avatar, first, second, third, fourth, five, six }) => (
 	<Wrapper>
 		<Anchor id="about" />
 		<InfoContainer>
-			<Image
-				fluid={avatar}
-				variants={{ visible: { opacity: 1 }, hidden: { opacity: 1 } }}
-				initial="hidden"
-				animate="visible"
-			/>
-			<TextContainer>
-				<Heading>Jestem Antonina!</Heading>
-				<P>
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-					nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-					sed diam voluptua. At vero eos
-				</P>
-			</TextContainer>
+			<Slide left>
+				<Image fluid={avatar} initial="hidden" animate="visible" />
+			</Slide>
+			<Slide right>
+				<TextContainer>
+					<Heading>Jestem Antonina!</Heading>
+					<P>
+						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+						nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+						erat, sed diam voluptua. At vero eos
+					</P>
+				</TextContainer>
+			</Slide>
 		</InfoContainer>
 		<ImagesContainer>
-			<MarginImage fluid={first} />
-			<MarginImage fluid={second} />
-			<MarginImage fluid={third} />
-			<MarginImage fluid={fourth} />
-			<MarginImage fluid={five} />
-			<MarginImage fluid={six} />
+			<Slide left>
+				<MarginImage fluid={first} />
+				<MarginImage fluid={second} />
+				<MarginImage fluid={third} />
+			</Slide>
+			<Slide right>
+				<MarginImage fluid={fourth} />
+				<MarginImage fluid={five} />
+				<MarginImage fluid={six} />
+			</Slide>
 		</ImagesContainer>
 	</Wrapper>
 );
