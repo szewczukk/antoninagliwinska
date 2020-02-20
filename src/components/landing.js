@@ -92,8 +92,8 @@ export default ({ fluid }) => (
 	<Background fluid={fluid}>
 		<FlexWrapper>
 			<Pulse>
-				<H2 id="#about">Antonina Gliwinska</H2>
-				<P>Lorem ipsum dolor sit amet</P>
+				<H2>Antonina Gliwinska</H2>
+				<P>Praca jest pasją</P>
 				<Button href="#about">
 					Więcej o mnie
 					<Arrow />

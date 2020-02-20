@@ -45,6 +45,7 @@ const TextContainer = styled.div`
 
 const Heading = styled.h3`
 	font-size: 2rem;
+	margin-bottom: 1rem;
 `;
 
 const P = styled.p`
@@ -80,9 +81,12 @@ export default ({ avatar, first, second, third, fourth, five, six }) => (
 				<TextContainer>
 					<Heading>Jestem Antonina!</Heading>
 					<P>
-						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-						nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-						erat, sed diam voluptua. At vero eos
+						Jestem doświadczoną masażystką z 14 letnim stażem pracy. Prowadzę
+						prywatny gabinet od 2008 roku. Pracowałam w renomowanych hotelach
+						spa takich jak Malinowy Zdrój Hotel Medical Spa w Solcu Zdroju czy
+						Bristol Art & Medical Spa w Busko-Zdroju. Jestem właśnie tym
+						przypadkiem kiedy praca jest pasją, a pomoc innym daje mi
+						satysfakcję.
 					</P>
 				</TextContainer>
 			</Slide>

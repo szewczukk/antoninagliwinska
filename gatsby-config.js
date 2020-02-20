@@ -1,8 +1,13 @@
 module.exports = {
 	siteMetadata: {
 		title: `Antonina Gliwinska`,
-		description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-		author: `@gatsbyjs`,
+		description: `Jestem doświadczoną masażystką z 14 letnim stażem pracy. Prowadzę
+		prywatny gabinet od 2008 roku. Pracowałam w renomowanych hotelach
+		spa takich jak Malinowy Zdrój Hotel Medical Spa w Solcu Zdroju czy
+		Bristol Art & Medical Spa w Busko-Zdroju. Jestem właśnie tym
+		przypadkiem kiedy praca jest pasją, a pomoc innym daje mi
+		satysfakcję.`,
+		author: `@szewczukk`,
 	},
 	plugins: [
 		`gatsby-plugin-react-helmet`,
@@ -25,8 +30,8 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
-				name: `gatsby-starter-default`,
-				short_name: `starter`,
+				name: `Antonina Gliwińska`,
+				short_name: `Antonina Gliwińska`,
 				start_url: `/`,
 				background_color: `#663399`,
 				theme_color: `#663399`,

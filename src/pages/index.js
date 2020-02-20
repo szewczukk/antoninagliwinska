@@ -13,7 +13,7 @@ export default ({
 	data: { background, avatar, second, third, fourth, five, six },
 }) => (
 	<Layout>
-		<SEO title="Home" />
+		<SEO title="Strona główna" />
 		<Landing fluid={background.childImageSharp.fluid} />
 		<About
 			avatar={avatar.childImageSharp.fluid}
