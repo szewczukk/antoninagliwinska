@@ -65,7 +65,7 @@ export default ({ avatar }) => (
 			<Slide left>
 				<TextContainer>
 					<Heading>Umów się na masaż!</Heading>
-					<p>+48 000-000-000</p>
+					<p>+48 791-262-186</p>
 				</TextContainer>
 			</Slide>
 			<Slide right>
