@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import GatsbyImage from 'gatsby-image';
+import Slide from 'react-reveal/Slide';
 
 const Wrapper = styled.div`
 	max-width: 1366px;
@@ -44,6 +45,7 @@ const TextContainer = styled.div`
 
 const Heading = styled.h3`
 	font-size: 2rem;
+	margin-bottom: 1rem;
 `;
 
 const P = styled.p`
@@ -72,23 +74,34 @@ export default ({ avatar, first, second, third, fourth, five, six }) => (
 	<Wrapper>
 		<Anchor id="about" />
 		<InfoContainer>
-			<Image fluid={avatar} />
-			<TextContainer>
-				<Heading>Jestem Antonina!</Heading>
-				<P>
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-					nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-					sed diam voluptua. At vero eos
-				</P>
-			</TextContainer>
+			<Slide left>
+				<Image fluid={avatar} initial="hidden" animate="visible" />
+			</Slide>
+			<Slide right>
+				<TextContainer>
+					<Heading>Jestem Antonina!</Heading>
+					<P>
+						Jestem doświadczoną masażystką z 14 letnim stażem pracy. Prowadzę
+						prywatny gabinet od 2008 roku. Pracowałam w renomowanych hotelach
+						spa takich jak Malinowy Zdrój Hotel Medical Spa w Solcu Zdroju czy
+						Bristol Art & Medical Spa w Busko-Zdroju. Jestem właśnie tym
+						przypadkiem kiedy praca jest pasją, a pomoc innym daje mi
+						satysfakcję.
+					</P>
+				</TextContainer>
+			</Slide>
 		</InfoContainer>
 		<ImagesContainer>
-			<MarginImage fluid={first} />
-			<MarginImage fluid={second} />
-			<MarginImage fluid={third} />
-			<MarginImage fluid={fourth} />
-			<MarginImage fluid={five} />
-			<MarginImage fluid={six} />
+			<Slide left>
+				<MarginImage fluid={first} />
+				<MarginImage fluid={second} />
+				<MarginImage fluid={third} />
+			</Slide>
+			<Slide right>
+				<MarginImage fluid={fourth} />
+				<MarginImage fluid={five} />
+				<MarginImage fluid={six} />
+			</Slide>
 		</ImagesContainer>
 	</Wrapper>
 );

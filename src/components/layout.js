@@ -40,7 +40,6 @@ export default ({ children }) => (
 		{children}
 		<Footer />
 		<CookieConsent
-			debug="true"
 			buttonText="Zgadzam się"
 			style={{
 				background: theme.colors.secondary,

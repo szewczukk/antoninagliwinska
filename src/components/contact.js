@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Image from 'gatsby-image';
+import Slide from 'react-reveal/Slide';
 
 const Wrapper = styled.div`
 	margin: 1rem 0;
@@ -61,11 +62,15 @@ export default ({ avatar }) => (
 			title="Lokalizacja"
 		/>
 		<Container>
-			<TextContainer>
-				<Heading>Umów się na masaż!</Heading>
-				<p>+48 000-000-000</p>
-			</TextContainer>
-			<StyledImage fluid={avatar} />
+			<Slide left>
+				<TextContainer>
+					<Heading>Umów się na masaż!</Heading>
+					<p>+48 791-262-186</p>
+				</TextContainer>
+			</Slide>
+			<Slide right>
+				<StyledImage fluid={avatar} />
+			</Slide>
 		</Container>
 	</Wrapper>
 );
