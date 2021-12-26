@@ -93,8 +93,8 @@ const Anchor = styled.div`
 export default () => (
   <MainWrapper>
     <Anchor id="offer" />
-    <H3>Moja oferta</H3>
-    <P>Cena: 120zł/h (Access Bars 150zł/h)</P>
+    <H3>Od 1.01.2022</H3>
+    <P>Cena: 100zł/45 min, 120zł/60 min, Access Bars 150zł/60 min</P>
     <StaticQuery
       query={graphql`
         query Markdowns {
