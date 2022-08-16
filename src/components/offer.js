@@ -93,8 +93,8 @@ const Anchor = styled.div`
 export default () => (
   <MainWrapper>
     <Anchor id="offer" />
-    <H3>Od 1.01.2022</H3>
-    <P>Cena: 100zł/45 min, 120zł/60 min, Access Bars 150zł/60 min</P>
+    <H3>Od 1.09.2022</H3>
+    <P>Cena zabiegu około 60 min -150 zł . Access Bars- 200 zł</P>
     <StaticQuery
       query={graphql`
         query Markdowns {
