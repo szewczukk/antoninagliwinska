@@ -94,7 +94,6 @@ export default () => (
   <MainWrapper>
     <Anchor id="offer" />
     <H3>Od 1.09.2023</H3>
-    <P>Cena zabiegu około 60 min -150 zł . Access Bars- 200 zł</P>
     <P>45 min * 4 razy cena 150 zł</P>
     <P>60 min - 1 raz cena 200 zł </P>
     <P>Access Bars 90 min - 250 zł</P>
