@@ -94,7 +94,7 @@ export default () => (
   <MainWrapper>
     <Anchor id="offer" />
     <H3>Od 1.09.2023</H3>
-    <P>Pakiet 4 x 45 min - 150 zł</P>
+    <P>Pakiet 4 x 45 min - 150 zł (pakiet ważny miesiąc)</P>
     <P>1 x 60 min - 200 zł </P>
     <P>Access Bars 90 min - 250 zł</P>
     <StaticQuery
